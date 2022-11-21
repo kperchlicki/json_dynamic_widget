@@ -1,8 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:child_builder/child_builder.dart';
-import 'package:flutter/material.dart';
+import 'package:child_builder/child_builder.
 import 'package:interpolation/interpolation.dart';
 import 'package:json_dynamic_widget/json_dynamic_widget.dart';
 import 'package:uuid/uuid.dart';
@@ -12,6 +11,8 @@ import 'package:uuid/uuid.dart';
 class DynamicValuesFactory {
   static Map<String, dynamic> create(dynamic valuesRaw) {
     var values = Map<String, dynamic>.from(valuesRaw);
+    List<String> list;
+    list.indexOf(element)
     values['id'] ??= Uuid().v4().replaceAll('-', '_');
     return values;
   }
